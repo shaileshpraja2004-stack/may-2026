@@ -1,0 +1,22 @@
+name: This pipeline will deploy to multiple env
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to multiple environments
+    run-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        environment:
+          - dev
+          - qa
+          - prod
+
+    steps:
+      - name: Deploy to each environment
+        run: echo "Running deployment on ${{ matrix.environment }}"
