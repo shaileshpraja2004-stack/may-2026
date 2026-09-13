@@ -2,7 +2,7 @@
 name: This pipeline will deploy to multiple env
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
