@@ -1,7 +1,7 @@
 name: CI and CD application for building and deploying app
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
