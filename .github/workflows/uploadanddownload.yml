@@ -2,9 +2,7 @@
 name: CI and CD application for building and deploying app
 
 on:
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch: 
 
 jobs:
   ci:
