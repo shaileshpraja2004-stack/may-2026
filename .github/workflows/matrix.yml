@@ -2,10 +2,8 @@
 name: This pipeline will deploy to multiple env
 
 on:
-  pull_request:
-    branches:
-      - main
-
+ workflow_dispatch: 
+ 
 jobs:
   deploy:
     name: Deploy to multiple environments
